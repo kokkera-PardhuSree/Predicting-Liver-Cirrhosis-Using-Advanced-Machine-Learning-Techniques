@@ -38,11 +38,11 @@ with open("normalizer.pkl", "rb") as f:
                                                               aspartate_aminotransferase, total_proteins,
                                                                                           albumin, ag_ratio]])
 
-                                                                                              input_scaled = scaler.transform(input_data)
-                                                                                                  prediction = model.predict(input_scaled)
+                                                                                          input_scaled = scaler.transform(input_data)
+                                                                                          prediction = model.predict(input_scaled)
 
-                                                                                                      if prediction[0] == 1:
-                                                                                                              st.error("⚠️ High Risk: Liver Cirrhosis Likely")
-                                                                                                                  else:
-                                                                                                                          st.success("✅ Low Risk: No Liver Cirrhosis Detected")
+                                                                                          if prediction[0] == 1:
+                                                                                            st.error("⚠️ High Risk: Liver Cirrhosis Likely")
+                                                                                          else:
+                                                                                            st.success("✅ Low Risk: No Liver Cirrhosis Detected")
                                                                                                                           
