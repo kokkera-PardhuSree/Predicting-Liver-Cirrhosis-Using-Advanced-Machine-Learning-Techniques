@@ -1,4 +1,4 @@
-
+#importing required Pacakeges
 import streamlit as st
 import pickle
 import numpy as np
@@ -28,7 +28,7 @@ with open("normalizer.pkl", "rb") as f:
   albumin = st.number_input("Albumin (g/dL)")
   ag_ratio = st.number_input("Albumin and Globulin Ratio")
 
-  # Gender to numeric
+  # Gender to numeric of the data liver 
   gender_num = 1 if gender == "Male" else 0
 
   # Predict button
